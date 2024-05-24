@@ -1,0 +1,45 @@
+.project-container {
+  width: 30%;
+  height: 40vh;
+  margin: 2rem 0;
+  border: 2px solid rgb(219, 219, 219);
+  border-radius: 10px 10px 5px 5px;
+  overflow: hidden;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.p-browser {
+  height: 2rem;
+  background-color: rgb(209, 207, 207);
+  display: flex;
+  align-items: center;
+  position: sticky;
+  z-index: 2;
+}
+.p-browser:nth-child(1) {
+  padding-left: 0.4rem;
+}
+
+.p-circle {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  margin: 0.2rem;
+  background-color: white;
+}
+
+.p-img {
+  width: 100%;
+  transition: all 10s ease;
+}
+
+.project-container:hover .p-img {
+  transform: translateY(-78%);
+}
+
+@media screen and (max-width: 480px) {
+  .project-container {
+    width: 40%;
+    height: 20vh;
+  }
+}
