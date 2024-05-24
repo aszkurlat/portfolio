@@ -1,6 +1,6 @@
 .header-container {
   display: flex;
-  height: 80vh;
+  height: 100vh;
 }
 .header-left {
   flex: 1;
