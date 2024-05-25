@@ -1,6 +1,6 @@
 .header-container {
   display: flex;
-  height: 100vh;
+  height: 90vh;
 }
 .header-left {
   flex: 1;
@@ -13,18 +13,18 @@
   position: relative;
 }
 .header-left-wrapper {
-  padding: 5rem;
-  height: 85%;
+  padding: 5rem 4rem;
+  height: 90%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .header-title {
-  font-size: 2.2rem;
+  font-size: 2.7rem;
   font-weight: 300;
 }
-.header-decription {
-  font-size: 1.2rem;
+.header-description {
+  font-size: 1.3rem;
 }
 .header-name {
   font-size: 4rem;
@@ -34,10 +34,10 @@
   overflow: hidden;
 }
 .header-role-item {
-  height: 2.7rem;
-  font-size: 1.8rem;
+  height: 2.6rem;
+  font-size: 1.9rem;
   font-weight: bold;
-  color: rgb(21, 75, 250);
+  color: #6554ff;
   display: flex;
   align-items: center;
 }
@@ -61,19 +61,95 @@
   top: 0;
   right: 0;
 }
-.header-scroll {
-  width: 2rem;
-  height: 2rem;
-  position: absolute;
-  bottom: 1.5rem;
-  cursor: pointer;
-}
-
 @keyframes moveTitleItem {
   50% {
     transform: translateY(-2.7rem);
   }
   100% {
     transform: translateY(-5.2rem);
+  }
+}
+@media screen and (min-width: 1650px) {
+  .header-container {
+    height: 90vh;
+  }
+  .header-left-wrapper {
+    padding: 5rem 4rem;
+    height: 65%;
+  }
+}
+@media screen and (max-width: 1649px) {
+  .header-container {
+    height: 90vh;
+  }
+  .header-left-wrapper {
+    padding: 6rem 4rem;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .header-container {
+    height: 75vh;
+  }
+  .header-left-wrapper {
+    padding: 0 3rem;
+    height: 80%;
+  }
+  .header-description {
+    font-size: 1rem;
+  }
+  .header-title {
+    font-size: 1.8rem;
+  }
+  .header-name {
+    font-size: 2.4rem;
+  }
+  .header-role-item {
+    height: 2.7rem;
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+  }
+  .header-left-wrapper {
+    padding: 2rem 3rem;
+    height: 80%;
+  }
+  .header-title {
+    font-size: 1.8rem;
+  }
+
+  .header-name {
+    font-size: 2.4rem;
+  }
+  .header-description {
+    display: none;
+  }
+  .header-role-item {
+    height: 2.7rem;
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header-container {
+    flex-direction: column;
+  }
+
+  .header-left-wrapper {
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+  }
+
+  .header-role-wrapper {
+    animation: moveTitleItem 4s ease-in-out infinite alternate;
+  }
+  .header-role-item {
+    height: 2.7rem;
+    font-size: 1.4rem;
   }
 }

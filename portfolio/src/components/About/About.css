@@ -1,7 +1,8 @@
 .about-container {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
+  margin-top: 2.5em;
 }
 /* left side */
 .about-left {
@@ -72,4 +73,55 @@
   color: #555;
   margin-bottom: 10px;
   font-size: 1.2rem;
+}
+@media screen and (max-width: 1200px) {
+  .about-container {
+    margin-top: 8.5rem;
+  }
+  .about-sub {
+    font-size: 1.1rem;
+  }
+
+  .about-desc {
+    font-size: 1rem;
+  }
+  .about-award-texts {
+    width: 85%;
+    font-size: 0.8rem;
+    margin-left: 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-left {
+    width: 100%;
+  }
+  .about-card {
+    height: 40vh;
+  }
+
+  .about-title {
+    font-size: 2.1rem;
+  }
+  .about-sub {
+    font-size: 1rem;
+  }
+  .about-desc {
+    font-size: 0.9rem;
+  }
+  .about-card.bg,
+  .about-award {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .about-desc {
+    font-size: 0.8rem;
+  }
+  .about-right {
+    padding: 20px;
+  }
 }

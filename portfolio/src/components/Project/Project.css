@@ -1,7 +1,7 @@
 .project-container {
-  width: 30%;
-  height: 40vh;
-  margin: 2rem 0;
+  width: 47%;
+  height: 60vh;
+  margin: 1.2rem 0;
   border: 2px solid rgb(219, 219, 219);
   border-radius: 10px 10px 5px 5px;
   overflow: hidden;
@@ -45,9 +45,16 @@
   transform: translateY(-78%);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1200px) {
   .project-container {
-    width: 40%;
-    height: 20vh;
+    width: 45%;
+    margin: 1rem auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .project-container {
+    height: 70vh;
+    width: 80%;
+    margin: 1rem auto;
   }
 }

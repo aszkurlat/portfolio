@@ -57,7 +57,7 @@ const Contact = () => {
             </div>
             <div className="c-info-item">
               <img className="c-icon" src={address} alt="" />
-              Kolska 19, 01-045 Warsaw, Poland
+              01-045 Warsaw, Poland
             </div>
           </div>
         </div>

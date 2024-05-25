@@ -24,5 +24,21 @@
   border-radius: 50%;
   background-color: #414141fd;
   position: absolute;
+  right: 0;
   cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .toggle-mode-container {
+    width: 3.1rem;
+    height: 1.5rem;
+    right: 8px;
+  }
+  .toggle-icon {
+    width: 1rem;
+    height: 1rem;
+  }
+  .toggle-button {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 }
