@@ -1,6 +1,7 @@
 .header-container {
   display: flex;
-  height: 90vh;
+  height: 100vh;
+  overflow: hidden;
 }
 .header-left {
   flex: 1;
@@ -37,7 +38,7 @@
   height: 2.6rem;
   font-size: 1.9rem;
   font-weight: bold;
-  color: #6554ff;
+  color: #17aa79;
   display: flex;
   align-items: center;
 }
@@ -45,21 +46,24 @@
   height: 100%;
   animation: moveTitleItem 6s ease-in-out infinite alternate;
 }
+.header-img-bg {
+  clip-path: polygon(100% 0%, 100% 51%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+  /* background-color: #ceac16; */
+  /* background-color: #17aa79; */
+  background-color: #17aa79;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 .header-img {
   width: 100%;
   height: 100%;
   object-fit: contain;
   position: absolute;
-}
-
-.header-img-bg {
-  clip-path: polygon(100% 0%, 100% 51%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
-  background-color: #6554ff;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
+  bottom: 0;
+  right: -15%;
 }
 @keyframes moveTitleItem {
   50% {
@@ -77,10 +81,13 @@
     padding: 5rem 4rem;
     height: 65%;
   }
+  .header-img {
+    right: -17.2%;
+  }
 }
 @media screen and (max-width: 1649px) {
   .header-container {
-    height: 90vh;
+    height: 100vh;
   }
   .header-left-wrapper {
     padding: 6rem 4rem;
@@ -89,14 +96,14 @@
 }
 @media screen and (max-width: 1200px) {
   .header-container {
-    height: 75vh;
+    height: 73vh;
   }
   .header-left-wrapper {
     padding: 0 3rem;
     height: 80%;
   }
   .header-description {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   .header-title {
     font-size: 1.8rem;
@@ -108,6 +115,10 @@
     height: 2.7rem;
     font-size: 1.4rem;
   }
+  .header-img {
+    right: -17%;
+    bottom: -20%;
+  }
 }
 @media screen and (max-width: 768px) {
   .header-container {
@@ -115,7 +126,7 @@
   }
   .header-left-wrapper {
     padding: 2rem 3rem;
-    height: 80%;
+    height: 90%;
   }
   .header-title {
     font-size: 1.8rem;
@@ -130,6 +141,10 @@
   .header-role-item {
     height: 2.7rem;
     font-size: 1.4rem;
+  }
+  .header-img {
+    right: -33%;
+    bottom: 0;
   }
 }
 @media screen and (max-width: 480px) {
@@ -151,5 +166,26 @@
   .header-role-item {
     height: 2.7rem;
     font-size: 1.4rem;
+  }
+  .header-img {
+    right: -29%;
+    bottom: 0;
+  }
+}
+@media (max-width: 768px) and (orientation: landscape) {
+  .header-container {
+    height: 88vh;
+    flex-direction: row;
+  }
+  .header-title {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+  .header-name {
+    font-size: 1.7rem;
+  }
+  .header-role-item {
+    height: 2.7rem;
+    font-size: 1rem;
   }
 }

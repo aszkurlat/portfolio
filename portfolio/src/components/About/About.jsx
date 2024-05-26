@@ -1,42 +1,38 @@
 import "./About.css";
 import Award from "/award.png";
+import aboutMe from "../../../public/about_me.png";
 
 function About() {
   return (
     <div className="about-container" id="about">
       {/* left side */}
       <div className="about-left">
-        <div className="about-card bg"></div>
+        {/* <div className="about-card bg"></div> */}
         <div className="about-card">
-          <img
-            src="https://images.pexels.com/photos/3585047/pexels-photo-3585047.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-            alt="person image"
-            className="about-img"
-          />
+          <img src={aboutMe} alt="person image" className="about-img" />
         </div>
       </div>
       {/* right side */}
       <div className="about-right">
         <h1 className="about-title">About Me</h1>
-        <p className="about-sub">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor
-        </p>
         <p className="about-desc">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat duis aute irure dolor in reprehende.
+          Hi! I'm Agnieszka, a dedicated front-end developer based in Warsaw,
+          Poland. With a keen eye for detail and a passion for crafting
+          immersive digital experiences, I specialize in leveraging cutting-edge
+          technologies such as React and other front-end tools to bring designs
+          to life. From building responsive layouts to optimizing user
+          interactions, I am committed to creating intuitive and impactful web
+          solutions that elevate brands and delight users.
         </p>
-        <div className="about-award">
-          <img src={Award} alt="" className="about-award-img" />
-          <div className="about-award-texts">
-            <h4 className="about-award-title">I Lorem ipsum dolor sit amet</h4>
-            <p className="about-award-desc">
-              Nemo enim ipsam voluptatem quia voluptas sit aspernatur autodit
-              and fugit.
-            </p>
-          </div>
+        <p className="about-tech-skills">
+          <p className="about-tech-skills">Technical Skills:</p>
+        </p>
+        <div className="about-skills">
+          <img src="/html.png" alt="" className="about-skill-img" />
+          <img src="css.png" alt="" className="about-skill-img" />
+          <img src="/js.png" alt="" className="about-skill-img" />
+          <img src="/react.png" alt="" className="about-skill-img" />
+          <img src="/node.png" alt="" className="about-skill-img" />
         </div>
       </div>
     </div>

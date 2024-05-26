@@ -7,7 +7,7 @@
 .c-bg {
   width: 2rem;
   height: 100%;
-  background-color: rgb(102, 67, 228);
+  background-color: #17aa79;
   position: absolute;
 }
 
@@ -80,14 +80,15 @@ button {
   border: none;
   border-radius: 5px;
   padding: 0.8rem 1.5rem;
-  background-color: rgb(102, 67, 228);
-  color: #dfdfdf;
+  background-color: #17aa79;
+  color: #f0efef;
   font-weight: 500;
   font-size: 1.1rem;
   cursor: pointer;
+  transition: 0.3s;
 }
 button:hover {
-  background-color: rgb(85, 53, 201);
+  background-color: #1ca376;
 }
 
 @media screen and (max-width: 1200px) {
