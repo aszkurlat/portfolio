@@ -9,7 +9,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "preact": "^10.19.6"
+    "@emailjs/browser": "^4.3.3",
+    "preact": "^10.19.6",
+    "react-router-dom": "^6.23.1"
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.8.2",
