@@ -2,7 +2,7 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  margin-top: 2.5rem;
+  margin: 2.5rem 0.5rem 0 0;
 }
 /* left side */
 .about-left {
@@ -15,7 +15,7 @@
 }
 .about-right {
   flex: 1;
-  margin-right: 10px;
+  padding-right: 13px;
 }
 .about-card {
   position: relative;
@@ -40,7 +40,7 @@
 }
 
 .about-tech-skills {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .about-desc {
