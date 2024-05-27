@@ -1,6 +1,6 @@
 # Personal Portfolio
 
-![Portfolio Preview](https://agnieszka-szkurlat-portfolio.pages.dev/)
+[View Portfolio](https://agnieszka-szkurlat-portfolio.pages.dev/)
 
 ## Description
 
@@ -33,7 +33,7 @@ Start the development server:
 sh
 Copy code
 npm run dev
-Open http://localhost:3000 to view it in the browser.
+Open http://localhost:5173 to view it in the browser.
 
 Usage
 Explore my projects and learn more about my skills and experience. Use the navigation menu to browse different sections of the portfolio. Toggle between light and dark modes using the switch in the header.
