@@ -3,16 +3,19 @@
   height: 100vh;
   overflow: hidden;
 }
+
 .header-left {
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .header-right {
   flex: 1;
   position: relative;
 }
+
 .header-left-wrapper {
   padding: 5rem 4rem;
   height: 90%;
@@ -20,20 +23,25 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
 .header-title {
   font-size: 2.7rem;
   font-weight: 300;
 }
+
 .header-description {
   font-size: 1.3rem;
 }
+
 .header-name {
   font-size: 4rem;
 }
+
 .header-roles {
   height: 3rem;
   overflow: hidden;
 }
+
 .header-role-item {
   height: 2.6rem;
   font-size: 1.9rem;
@@ -42,14 +50,14 @@
   display: flex;
   align-items: center;
 }
+
 .header-roles-wrapper {
   height: 100%;
   animation: moveTitleItem 6s ease-in-out infinite alternate;
 }
+
 .header-img-bg {
   clip-path: polygon(100% 0%, 100% 51%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
-  /* background-color: #ceac16; */
-  /* background-color: #17aa79; */
   background-color: #17aa79;
   width: 100%;
   height: 100%;
@@ -57,6 +65,7 @@
   top: 0;
   left: 0;
 }
+
 .header-img {
   width: 100%;
   height: 100%;
@@ -65,6 +74,92 @@
   bottom: 0;
   right: -15%;
 }
+
+.header-menu {
+  margin: 2.5rem 0 0 2rem;
+  width: 32px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  position: relative;
+}
+
+.header-menu span {
+  width: 100%;
+  height: 5px;
+  background-color: rgb(12, 185, 99);
+  transform-origin: center;
+  transition: all 0.5s ease;
+  position: absolute;
+}
+
+.header-menu span.line1 {
+  top: 0;
+}
+
+.header-menu span.line2 {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header-menu span.line3 {
+  bottom: 0;
+}
+
+.header-menu.active span.line1 {
+  transform: translateY(10px) rotate(45deg);
+}
+
+.header-menu.active span.line2 {
+  opacity: 0;
+}
+
+.header-menu.active span.line3 {
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+.nav {
+  position: fixed;
+  top: 3.2rem;
+  left: -7rem;
+  background-color: white;
+  height: 270px;
+  width: 10rem;
+  background-color: #000000d7;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  z-index: 99;
+  border-radius: 5px;
+}
+
+.nav.active {
+  transform: translateX(-20rem);
+}
+
+.nav-menu {
+  list-style: none;
+  padding: 2rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.nav-item {
+  color: rgb(201, 196, 196);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.nav-item:hover {
+  color: rgb(23, 240, 131);
+}
+
 @keyframes moveTitleItem {
   50% {
     transform: translateY(-2.7rem);

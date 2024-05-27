@@ -15,7 +15,7 @@
 }
 .about-right {
   flex: 1;
-  margin-right: 2rem;
+  margin-right: 10px;
 }
 .about-card {
   position: relative;
@@ -45,8 +45,9 @@
 
 .about-desc {
   margin: 1.5rem 0;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1.2rem;
+  text-align: justify;
 }
 
 .about-skills {

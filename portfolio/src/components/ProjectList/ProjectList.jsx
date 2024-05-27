@@ -4,7 +4,7 @@ import { projects } from "../../../data/data.js";
 
 function Projects() {
   return (
-    <div className="pl-container" id="project-list">
+    <div className="pl-container" id="projects">
       <div className="pl-texts">
         <h1 className="pl-title">Portfolio Projects</h1>
         <p className="pl-desc">

@@ -1,13 +1,11 @@
 import "./About.css";
-import Award from "/award.png";
-import aboutMe from "../../../public/about_me.png";
+import aboutMe from "/about_me.png";
 
 function About() {
   return (
     <div className="about-container" id="about">
       {/* left side */}
       <div className="about-left">
-        {/* <div className="about-card bg"></div> */}
         <div className="about-card">
           <img src={aboutMe} alt="person image" className="about-img" />
         </div>
@@ -33,6 +31,7 @@ function About() {
           <img src="/js.png" alt="" className="about-skill-img" />
           <img src="/react.png" alt="" className="about-skill-img" />
           <img src="/node.png" alt="" className="about-skill-img" />
+          <img src="/git.png" alt="" className="about-skill-img" />
         </div>
       </div>
     </div>
