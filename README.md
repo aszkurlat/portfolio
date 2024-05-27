@@ -20,7 +20,7 @@ To run this project locally, follow these steps:
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/portfolio.git
+   git clone https://github.com/aszkurlat/portfolio.git
 Navigate to the project directory:
 sh
 Copy code
