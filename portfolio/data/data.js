@@ -6,7 +6,7 @@ export const projects = [
     github: "https://github.com/aszkurlat/gym_react_spa",
   },
   {
-    id: 2,
+    id: 3,
     img: "/food-order-app.png",
     link: "https://food-order-app-frontend-woad.vercel.app/",
     github: "https://github.com/aszkurlat/food-order-app",
